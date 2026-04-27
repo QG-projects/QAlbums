@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeling Raw Sun | MNAL0105026</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Faculty+Glyphic&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glass-ui.css">
+</head>
+
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-container">
+        <div class="splash-content glass-card">
+            <div class="album-cover-wrapper">
+                <img src="assets/images/album-cover.png" alt="Album Cover" id="main-cover">
+            </div>
+            <button id="enter-btn" class="ui-btn" style="display: none;">Open a Album</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="hidden">
+        <div class="album-grid">
+            <!-- Photo Items -->
+            <div class="album-item text-card glass-card">
+                <p class="art-text">Feeling Raw Sun</p>
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo3.jpg" alt="Memory 1">
+            </div>
+
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo8.jpg" alt="Memory 2">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo5.jpg" alt="Memory 3">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo9.jpg" alt="Memory 3">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo4.jpg" alt="Memory 3">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo1.jpg" alt="Memory 4">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo7.jpg" alt="Memory 5">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo2.jpg" alt="Memory 6">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo10.jpg" alt="Memory 3">
+            </div>
+
+            <div class="album-item glass-card">
+                <img src="assets/images/photo6.jpg" alt="Memory 7">
+            </div>
+
+            <!-- Secret Images (Hidden by default) -->
+            <div class="album-item glass-card secret-img">
+                <img src="assets/images/secret3.jpg" alt="Secret Memory">
+            </div>
+
+            <div class="album-item glass-card secret-img">
+                <img src="assets/images/secret2.jpg" alt="Secret Memory">
+            </div>
+
+            <div class="album-item glass-card secret-img">
+                <img src="assets/images/secret4.jpg" alt="Secret Memory">
+            </div>
+
+            <div class="album-item glass-card secret-img">
+                <img src="assets/images/secret1.jpg" alt="Secret Memory">
+            </div>
+
+            <div class="album-item glass-card secret-img">
+                <img src="assets/images/secret5.jpg" alt="Secret Memory">
+            </div>
+        </div>
+
+        <!-- Secret Trigger Section -->
+        <div id="secret-trigger-container" class="secret-trigger">
+            <!-- Button will be injected here by JS based on random logic -->
+        </div>
+
+        <!-- Back Button (Hidden initially) -->
+        <div id="back-btn-container" class="hidden">
+            <button id="back-to-album-btn" class="ui-btn back-btn glass-card pill yellow-glass">Back to Public
+                Album</button>
+        </div>
+    </main>
+
+    <!-- Footer Tags -->
+    <footer id="app-footer">
+        <div class="footer-container">
+            <span class="tag special-creator">Photographer - BDUT</span>
+            <span class="tag special-creator">Model, Idea and Design - DVQ</span>
+            <span class="tag special-location">Location - <a href="https://maps.app.goo.gl/tiCnjKF9vs1vKXgq9"
+                    target="_blank" style="color: var(--text-main); text-decoration: none;">Hang Rai-Phan
+                    Rang</a></span>
+            <span class="tag">Clothes - Jsseyite</span>
+            <span class="tag">Realeaed - 01/05/2026</span>
+            <span class="tag">Feelings Raw Sun MNAL0105026</span>
+        </div>
+    </footer>
+
+    <!-- Music Player (Samsung Style) -->
+    <div id="music-player" class="music-player-bar glass-card pill">
+        <div class="player-info">
+            <span id="song-title">Song: ...</span>
+        </div>
+
+        <div class="player-controls">
+            <button id="play-pause-btn" class="ui-btn control-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+            </button>
+        </div>
+        <audio id="main-audio" loop>
+            <source src="assets/audio/song1.m4a" type="audio/mp4">
+        </audio>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/audio-player.js"></script>
+    <script src="js/album-logic.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
