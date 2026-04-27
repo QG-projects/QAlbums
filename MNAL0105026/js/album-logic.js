@@ -6,7 +6,7 @@ function initSecretSystem() {
     const backBtn = document.getElementById('back-to-album-btn');
 
     // Chance to show the secret button
-    if (Math.random() < 0.7) {
+    if (Math.random() < 0.8) {
         const btn = document.createElement('button');
         btn.className = 'ui-btn glass-card pill yellow-glass';
         btn.innerText = 'See Secret Album';
